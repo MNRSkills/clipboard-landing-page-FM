@@ -10,7 +10,12 @@ module.exports = {
         "2xl": "1124px",
       },
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "hero-mobile": "url('/images/bg-header-mobile.png')",
+        "deskt-hero": "url('/images/bg-header-desktop.png')",
+      },
+    },
   },
   plugins: [],
 };
