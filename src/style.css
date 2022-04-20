@@ -1,5 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.what-we-sell-mobile {
+  @apply min-h-screen;
+}
+
+.logo-mobile {
+  @apply min-h-screen;
+}
+
+.what-we-do {
+  @apply text-center w-full mb-7;
+}
+
+.card-mobile-h1 {
+  @apply text-2xl text-center text-darkGrayishBlue whitespace-pre-wrap font-bold pb-7;
+}
+
+.card-mobile-p {
+  @apply leading-6 pb-6;
+}

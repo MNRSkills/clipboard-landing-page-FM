@@ -5,40 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
-    <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | Clipboard landing page</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
-  <body>
+  <body class="bg-hero-mobile h-full bg-no-repeat bg-top bg-contain">
     <div
-      class="container bg-hero-mobile h-full bg-no-repeat bg-top bg-contain text-grayishBlue"
+      class="container text-grayishBlue md:w-full"
     >
       <header class="header text-center w-full min-h-screen">
         <div class="w-full p-10">
-          <img src="/images/logo.svg" alt="" class="p-10 ml-2 mt-10" />
+          <img src="/images/logo.svg" alt="" class="p-10 ml-2 mt-10 " />
         </div>
         <h1
-          class="text-2xl text-darkGrayishBlue text-center whitespace-pre-wrap font-bold"
+          class="card-mobile-h1"
         >
           A history of        everything you copy
         </h1>
-        <p class="leading-6">
+        <p class="card-mobile-p">
           Clipboard allows you to track and organize everything you copy.
           Instantly access your clipboard on all your devices.
         </p>
-        <div class="flex flex-col gap-5 pt-5">
+        <div class="flex flex-col gap-5 pt-5 md:flex-row">
           <button class="p-3 bg-strongCyan text-white rounded-2xl w-full">
             Download for iOS
           </button>
@@ -47,62 +36,149 @@
           </button>
         </div>
       </header>
-      <section class="min-h-screen">
-        <div class="what-we-do text-center w-full mb-7">
+      <section class="what-we-sell-mobile md:grid md:grid-cols-2 md:justify-center">
+        <div class="what-we-do md:container md:col-span-2 md:row-span-1 md:row-start-1">
           <h1
-            class="text-2xl text-center text-darkGrayishBlue whitespace-pre-wrap font-bold"
+            class="card-mobile-h1 md:whitespace-normal"
           >
-            Keep track of your         snippets
+          <!-- DO NOT FIX TEXT NEED WHITESPACE -->
+            Keep track of your    snippets
           </h1>
-          <p class="leading-6 pb-6">
+          <p class="card-mobile-p">
             Clipboard instantly stores any item you copy in the cloud, meaning
             you can access your snippets immediately on all your devices. Our
             Mac and iOS apps will help you organize everything. 
           </p>
         </div>
-        <div>
-          <img src="/images/image-computer.png" alt="all-in-one-device" />
+        <div class="">
+          <img src="/images/image-computer.png" alt="all-in-one-device" class="md:row-span-3 md:row-start-2"/>
         </div>
-        <div class="text-center w-full mt-7">
-          <h1 class="text-2xl text-center text-darkGrayishBlue whitespace-pre-wrap font-bold">Quick Search</h1>
-          <p class="leading-6 pb-6 ">
+        <div class="what-we-do mt-7 md:col-start-2 md:row-span-1">
+          <h1 class="card-mobile-h1">Quick Search</h1>
+          <p class="card-mobile-p  ">
             Easily search your snippets by content, category, web address, application, and more.
           </p>
         </div>
-        <div class="text-center w-full mt-7">
-          <h1 class="text-2xl text-center text-darkGrayishBlue whitespace-pre-wrap font-bold">iCloud Sync</h1>
-          <p class="leading-6 pb-6 ">Instantly saves and syncs snippets across all your devices.</p>
+        <div class="what-we-do md:col-start-2 md:row-span-1">
+          <h1 class="card-mobile-h1">iCloud Sync</h1>
+          <p class="card-mobile-p ">Instantly saves and syncs snippets across all your devices.</p>
         </div>
 
-        <div class="text-center w-full mt-7">
-          <h1 class="text-2xl text-center text-darkGrayishBlue whitespace-pre-wrap font-bold">Complete History</h1>
-          <p class="leading-6 pb-6 ">
+        <div class="what-we-do md:col-start-2">
+          <h1 class="card-mobile-h1">Complete History</h1>
+          <p class="card-mobile-p ">
             Retrieve any snippets from the first moment you started using the
             app.
           </p>
         </div>
       </section>
-      
-         Access Clipboard anywhere Whether you’re on the go, or at your
-      computer, you can access all your Clipboard snippets in a few simple
-      clicks. Supercharge your workflow We’ve got the tools to boost your
-      productivity. Create blacklists Ensure sensitive information never makes
-      its way to your clipboard by excluding certain sources. Plain text
-      snippets Remove unwanted formatting from copied text for a consistent
-      look. Sneak preview Quick preview of all snippets on your Clipboard for
-      easy access. Clipboard for iOS and Mac OS Available for free on the App
-      Store. Download for Mac or iOS, sync with iCloud and you’re ready to start
-      adding to your clipboard. Download for iOS Download for Mac FAQs Contact
-      Us Privacy Policy Press Kit Install Guide
-    </div>
+      <section class="what-we-sell-mobile">
+        <div class="what-we-do">
+          <h1
+            class="card-mobile-h1"
+          >
+          <!-- DO NOT FIX TEXT NEED WHITESPACE -->
+          Access Clipboard      Anywhere
+          </h1>
+          <p class="card-mobile-p">
+            Whether you’re on the go, or at your
+            computer, you can access all your Clipboard snippets in a few simple
+            clicks. 
+          </p>
+        </div>
 
-    <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </p>
-    </footer>
+        <div>
+          <img src="/images/image-devices.png" alt="">
+        </div>
+
+        <div class="what-we-do mt-5">
+          <!-- DO NOT FIX TEXT NEED WHITESPACE -->
+          <h1 class="card-mobile-h1">Supercharge your  workflow</h1>
+          <p class="card-mobile-p">We’ve got the tools to boost your
+            productivity.</p>
+        </div>
+      </section>
+      <section class="what-we-sell-mobile">
+        <div class="p-10">
+          <img src="/images/icon-blacklist.svg" alt="" class="m-auto">
+        </div>
+        <div class="what-we-do">
+          <h1 class="card-mobile-h1">Create blacklists</h1>
+          <p>Ensure sensitive information never makes
+            its way to your clipboard by excluding certain sources.
+          </p>
+        </div>
+        <div class="py-10">
+          <img src="/images/icon-text.svg" alt="" class="m-auto">
+        </div>
+        <div class="what-we-do">
+          <h1 class="card-mobile-h1"> Plain text snippets</h1>
+          <p class="card-mobile-p">
+            Remove unwanted formatting from copied text for a consistent
+            look.
+          </p>
+        </div>
+
+        <div class="py-10"><img src="/images/icon-preview.svg" alt="" class="m-auto"></div>
+        <div class="what-we-do">
+          <h1 class="card-mobile-h1">Sneak preview</h1>
+          <p class="card-mobile-p">
+            Quick preview of all snippets on your Clipboard for easy access. 
+          </p>
+        </div>
+      </section>
+      <section class="what-we-sell-mobile">
+        <div class="py-20"><img src="/images/logo-google.png" alt="" class="m-auto"></div>
+        <div class="py-20"><img src="/images/logo-ibm.png" alt="" class="m-auto"></div>
+        <div class="py-20"><img src="/images/logo-microsoft.png" alt="" class="m-auto"></div>
+        <div class="py-20"><img src="/images/logo-hp.png" alt="" class="m-auto"></div>
+        <div class="py-20"><img src="/images/logo-vector-graphics.png" alt="" class="m-auto"></div>
+      </section>
+      <section class="what-we-sell-mobile">
+        <div>
+          <h1 class="card-mobile-h1"> Clipboard for iOS and     Mac OS</h1>
+          <p class="card-mobile-p">Available for free on the App
+            Store. Download for Mac or iOS, sync with iCloud and you’re ready to start
+            adding to your clipboard.</p>
+        </div>
+        <div class="flex flex-col gap-5 pt-5">
+          <button class="p-3 bg-strongCyan text-white rounded-2xl w-full">
+            Download for iOS
+          </button>
+          <button class="p-3 rounded-xl bg-lightBlue text-white w-full">
+            Download for Mac
+          </button>
+        </div>
+      </section>
+    </div>
+      <footer class="bg-lightGray">
+        <div class="w-full pt-20">
+          <img src="/images/logo.svg" alt="" class="w-16 m-auto" />
+        </div>
+        <div class="py-10">
+          <ul class="flex flex-col justify-center items-center text-">
+            <li class="py-2">FAQs</li>
+            <li class="py-2">Contact Us</li>
+            <li class="py-2" >Privacy Poiicy</li>
+            <li class="py-2">Press Kit</li>
+            <li class="py-2">Install Guide</li>
+          </ul>
+        </div>
+        <div>
+          <ul class="flex flex-row justify-center items-center">
+            <li class="px-7"><img src="/images/icon-facebook.svg" alt=""></li>
+            <li class="px-7"><img src="/images/icon-twitter.svg" alt=""></li>
+            <li class="px-7"><img src="/images/icon-instagram.svg" alt=""></li>
+          </ul>
+        </div>
+        <p class="attribution p-20">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Your Name Here</a>.
+        </p>
+      </footer>
+
+    
   </body>
 </html>
