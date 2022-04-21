@@ -11,15 +11,16 @@
     <title>Frontend Mentor | Clipboard landing page</title>
   </head>
   <body class="bg-hero-mobile h-full bg-no-repeat bg-top bg-contain">
+    <!-- MAIN DIV CONTAINER -->
     <div
       class="container text-grayishBlue md:w-full"
     >
-      <header class="header text-center w-full min-h-screen">
+      <header class="header text-center w-full min-h-screen m-auto">
         <div class="w-full p-10">
-          <img src="/images/logo.svg" alt="" class="p-10 ml-2 mt-10 " />
+          <img src="/images/logo.svg" alt="" class="p-10 m-auto " />
         </div>
         <h1
-          class="card-mobile-h1"
+          class="card-mobile-h1 md:whitespace-pre-line"
         >
           A history of        everything you copy
         </h1>
@@ -36,7 +37,7 @@
           </button>
         </div>
       </header>
-      <section class="what-we-sell-mobile md:grid md:grid-cols-2 md:justify-center">
+      <section class="what-we-sell-mobile md:grid md:grid-cols-2 md:justify-center md:gap-4 md:relative">
         <div class="what-we-do md:container md:col-span-2 md:row-span-1 md:row-start-1">
           <h1
             class="card-mobile-h1 md:whitespace-normal"
@@ -50,8 +51,8 @@
             Mac and iOS apps will help you organize everything. 
           </p>
         </div>
-        <div class="">
-          <img src="/images/image-computer.png" alt="all-in-one-device" class="md:h-full md:row-start-2"/>
+        <div class="md:row-span-3 md:absolute lg:-left-60 lg:top-96 md:-left-40 md:top-1/2 md:shrink-0">
+          <img src="/images/image-computer.png" alt="all-in-one-device" class="lg:w-full md:w-96 md:h-full "/>
         </div>
         <div class="what-we-do mt-7 md:col-start-2 md:row-span-1">
           <h1 class="card-mobile-h1">Quick Search</h1>
@@ -88,7 +89,7 @@
         </div>
 
         <div>
-          <img src="/images/image-devices.png" alt="">
+          <img src="/images/image-devices.png" alt="" class="w-full">
         </div>
 
         <div class="what-we-do mt-5">
@@ -98,36 +99,43 @@
             productivity.</p>
         </div>
       </section>
-      <section class="what-we-sell-mobile">
-        <div class="p-10">
-          <img src="/images/icon-blacklist.svg" alt="" class="m-auto">
+      <!-- LIST OF OPTIONS  -->
+      <section class="what-we-sell-mobile md:flex md:justify-center md:items-center">
+        <div class="w-64">
+          <div class="p-10 md:row-start-1">
+            <img src="/images/icon-blacklist.svg" alt="" class="m-auto">
+          </div>
+          <div class="what-we-do md:row-start-2">
+            <h1 class="card-mobile-h1">Create blacklists</h1>
+            <p>Ensure sensitive information never makes
+              its way to your clipboard by excluding certain sources.
+            </p>
+          </div>
         </div>
-        <div class="what-we-do">
-          <h1 class="card-mobile-h1">Create blacklists</h1>
-          <p>Ensure sensitive information never makes
-            its way to your clipboard by excluding certain sources.
-          </p>
+        <div  class="w-64">
+          <div class="py-10 md:row-start-1">
+            <img src="/images/icon-text.svg" alt="" class="m-auto">
+          </div>
+          <div class="what-we-do md:row-start-2">
+            <h1 class="card-mobile-h1"> Plain text snippets</h1>
+            <p class="card-mobile-p">
+              Remove unwanted formatting from copied text for a consistent
+              look.
+            </p>
+          </div>
         </div>
-        <div class="py-10">
-          <img src="/images/icon-text.svg" alt="" class="m-auto">
-        </div>
-        <div class="what-we-do">
-          <h1 class="card-mobile-h1"> Plain text snippets</h1>
-          <p class="card-mobile-p">
-            Remove unwanted formatting from copied text for a consistent
-            look.
-          </p>
-        </div>
-
-        <div class="py-10"><img src="/images/icon-preview.svg" alt="" class="m-auto"></div>
-        <div class="what-we-do">
-          <h1 class="card-mobile-h1">Sneak preview</h1>
-          <p class="card-mobile-p">
-            Quick preview of all snippets on your Clipboard for easy access. 
-          </p>
+        <div  class="w-64">
+          <div class="py-10 md:row-start-1"><img src="/images/icon-preview.svg" alt="" class="m-auto"></div>
+          <div class="what-we-do md:row-start-2">
+            <h1 class="card-mobile-h1">Sneak preview</h1>
+            <p class="card-mobile-p">
+              Quick preview of all snippets on your Clipboard for easy access. 
+            </p>
+          </div>
         </div>
       </section>
-      <section class="what-we-sell-mobile">
+      <!-- ICON SECTION  -->
+      <section class="what-we-sell-mobile md:flex md:justify-around md:items-center">
         <div class="py-20"><img src="/images/logo-google.png" alt="" class="m-auto"></div>
         <div class="py-20"><img src="/images/logo-ibm.png" alt="" class="m-auto"></div>
         <div class="py-20"><img src="/images/logo-microsoft.png" alt="" class="m-auto"></div>
@@ -141,7 +149,7 @@
             Store. Download for Mac or iOS, sync with iCloud and you’re ready to start
             adding to your clipboard.</p>
         </div>
-        <div class="flex flex-col gap-5 pt-5">
+        <div class="flex flex-col gap-5 pt-5 md:flex-row">
           <button class="p-3 bg-strongCyan text-white rounded-2xl w-full">
             Download for iOS
           </button>
@@ -151,12 +159,13 @@
         </div>
       </section>
     </div>
+    <!-- THIS IS THE END OF THE MAIN DIV CONTAINER -->
       <footer class="bg-lightGray">
         <div class="w-full pt-20">
           <img src="/images/logo.svg" alt="" class="w-16 m-auto" />
         </div>
         <div class="py-10">
-          <ul class="flex flex-col justify-center items-center text-">
+          <ul class="flex flex-col justify-center items-center ">
             <li class="py-2">FAQs</li>
             <li class="py-2">Contact Us</li>
             <li class="py-2" >Privacy Poiicy</li>
