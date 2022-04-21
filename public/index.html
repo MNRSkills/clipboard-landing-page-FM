@@ -10,7 +10,7 @@
 
     <title>Frontend Mentor | Clipboard landing page</title>
   </head>
-  <body class="bg-hero-mobile h-full bg-no-repeat bg-top bg-contain">
+  <body class="bg-hero-mobile h-full bg-no-repeat bg-top bg-contain font-forAll">
     <!-- MAIN DIV CONTAINER -->
     <div
       class="container text-grayishBlue md:w-full"
@@ -28,11 +28,11 @@
           Clipboard allows you to track and organize everything you copy.
           Instantly access your clipboard on all your devices.
         </p>
-        <div class="flex flex-col gap-5 pt-5 md:flex-row">
-          <button class="p-3 bg-strongCyan text-white rounded-2xl w-full">
+        <div class="button-container">
+          <button class="p-3 bg-strongCyan text-white rounded-2xl w-full md:w-52 shadow-2xl">
             Download for iOS
           </button>
-          <button class="p-3 rounded-xl bg-lightBlue text-white w-full">
+          <button class="p-3 rounded-2xl bg-lightBlue text-white w-full md:w-52 shadow-2xl">
             Download for Mac
           </button>
         </div>
@@ -100,7 +100,7 @@
         </div>
       </section>
       <!-- LIST OF OPTIONS  -->
-      <section class="what-we-sell-mobile md:flex md:justify-center md:items-center">
+      <section class="what-we-sell-mobile md:flex md:justify-around md:items-center">
         <div class="w-64">
           <div class="p-10 md:row-start-1">
             <img src="/images/icon-blacklist.svg" alt="" class="m-auto">
@@ -145,15 +145,19 @@
       <section class="what-we-sell-mobile">
         <div>
           <h1 class="card-mobile-h1"> Clipboard for iOS and     Mac OS</h1>
-          <p class="card-mobile-p">Available for free on the App
-            Store. Download for Mac or iOS, sync with iCloud and you’re ready to start
+          <p class="card-mobile-p ">
+            Available for free on the App
+            Store. Download for Mac or iOS, sync with iCloud and 
+            
+            
+            you’re ready to start
             adding to your clipboard.</p>
         </div>
-        <div class="flex flex-col gap-5 pt-5 md:flex-row">
-          <button class="p-3 bg-strongCyan text-white rounded-2xl w-full">
+        <div class="button-container">
+          <button class="p-3 bg-strongCyan text-white rounded-2xl w-full md:w-52 shadow-2xl">
             Download for iOS
           </button>
-          <button class="p-3 rounded-xl bg-lightBlue text-white w-full">
+          <button class="p-3 rounded-2xl bg-lightBlue text-white w-full md:w-52 shadow-2xl">
             Download for Mac
           </button>
         </div>

@@ -536,16 +536,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: center;
 }
 
-.gap-5{
-  gap: 1.25rem;
-}
-
 .rounded-2xl{
   border-radius: 1rem;
-}
-
-.rounded-xl{
-  border-radius: 0.75rem;
 }
 
 .bg-strongCyan{
@@ -611,16 +603,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1.75rem;
 }
 
-.pt-5{
-  padding-top: 1.25rem;
-}
-
 .pt-20{
   padding-top: 5rem;
 }
 
 .text-center{
   text-align: center;
+}
+
+.font-forAll{
+  font-family: Bai Jamjuree;
 }
 
 .text-grayishBlue{
@@ -631,6 +623,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.shadow-xl{
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .what-we-sell-mobile{
@@ -663,7 +661,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.5rem;
 }
 
+/* THIS IS HELPER CLASSES */
+
+.button-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding-top: 1.25rem;
+}
+
 @media (min-width: 768px){
+  .button-container{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
   .md\:container{
     width: 100%;
     margin-right: auto;
@@ -734,6 +747,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 100%;
   }
 
+  .md\:w-52{
+    width: 13rem;
+  }
+
   .md\:w-96{
     width: 24rem;
   }
@@ -744,10 +761,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .md\:flex-row{
-    flex-direction: row;
   }
 
   .md\:items-center{

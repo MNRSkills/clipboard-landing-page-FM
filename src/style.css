@@ -23,3 +23,11 @@
 .card-mobile-p {
   @apply leading-6 pb-6;
 }
+
+
+
+/* THIS IS HELPER CLASSES */
+
+.button-container {
+  @apply flex flex-col gap-5 pt-5 md:flex-row md:justify-center md:items-center;
+}
